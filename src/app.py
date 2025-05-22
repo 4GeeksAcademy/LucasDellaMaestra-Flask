@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # Cargar modelo y transformador
-model = pickle.load(open("xgboost_model.pkl", "rb"))
+model = pickle.load(open("src/xgboost_model.pkl", "rb"))
 
 @app.route('/')
 def home():
